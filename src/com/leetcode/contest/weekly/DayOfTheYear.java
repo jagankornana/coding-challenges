@@ -1,4 +1,4 @@
-package com.leetcode.contest;
+package com.leetcode.contest.weekly;
 
 public class DayOfTheYear {
 
