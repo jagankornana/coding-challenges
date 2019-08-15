@@ -12,25 +12,12 @@ public class ReverseInteger {
     }
 
     private static int reverse(int x) {
-        if (x == Integer.MIN_VALUE) return 0;
-        boolean negative = x < 0;
-        x = Math.abs(x);
         long rev = 0;
-        while (x > 0) {
+        while (x != 0) {
             rev = rev * 10 + (x % 10);
             x /= 10;
         }
-        if (negative) {
-            if (rev > Integer.MAX_VALUE + 1) {
-                return 0;
-            } else {
-                return 0 - (int) rev;
-            }
-        } else {
-            if (rev > Integer.MAX_VALUE) {
-                return 0;
-            }
-        }
+        if (rev < Integer.MIN_VALUE || rev > Integer.MAX_VALUE) return 0;
         return (int) rev;
     }
 }
