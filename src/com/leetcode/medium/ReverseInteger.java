@@ -8,27 +8,24 @@ public class ReverseInteger {
         System.out.println(reverse(432684932));
         System.out.println(reverse(2147483647));
         System.out.println(reverse(-2147483648));
+
     }
 
     private static int reverse(int x) {
-        if (x == Integer.MIN_VALUE) {
-            return 0;
-        }
+        if (x == Integer.MIN_VALUE) return 0;
         boolean negative = x < 0;
-        String str = String.valueOf(Math.abs(x));
-        int len = str.length();
-        char[] charArr = new char[len];
-        for (int i = len - 1; i >= 0; i--) {
-            charArr[len - i - 1] = str.charAt(i);
+        x = Math.abs(x);
+        long rev = 0;
+        while (x > 0) {
+            rev = rev * 10 + (x % 10);
+            x /= 10;
         }
-        long rev = Long.valueOf(new String(charArr));
-
         if (negative) {
-            rev = 0 - rev;
-            if (rev < Integer.MIN_VALUE) {
+            if (rev > Integer.MAX_VALUE + 1) {
                 return 0;
+            } else {
+                return 0 - (int) rev;
             }
-            return (int) rev;
         } else {
             if (rev > Integer.MAX_VALUE) {
                 return 0;
