@@ -1,4 +1,4 @@
-package com.hackerrank.algorithms;
+package com.hackerrank.problems;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class TimeConversion {
 				int hours = Integer.parseInt(time.substring(0,
 						time.indexOf(':')));
 				hours += 12;
-				System.out.println(Integer.toString(hours)
+				System.out.println(hours
 						+ time.substring(time.indexOf(':'), time.indexOf('P')));
 			}
 		}

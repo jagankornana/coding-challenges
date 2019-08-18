@@ -3,6 +3,9 @@ package com.leetcode.contest.weekly;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Given a string s, return the last substring of s in lexicographical order.
+ */
 public class LastSubstring {
 
     public static void main(String[] args) {

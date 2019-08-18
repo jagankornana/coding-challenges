@@ -1,4 +1,4 @@
-package com.hackerrank.algorithms;
+package com.hackerrank.problems;
 
 import java.util.Scanner;
 
