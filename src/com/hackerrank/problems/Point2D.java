@@ -5,7 +5,7 @@ public class Point2D {
 	private int x;
 	private int y;
 
-	public Point2D(int x, int y) {
+    Point2D(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -14,8 +14,7 @@ public class Point2D {
 
 		double var1 = Math.pow(p.getX() - this.getX(), 2);
 		double var2 = Math.pow(p.getY() - this.getY(), 2);
-		double distance_2d = Math.sqrt(var1 + var2);
-		return distance_2d;
+        return Math.sqrt(var1 + var2);
 	}
 
 	public void printDistance(double d) {
@@ -30,7 +29,7 @@ public class Point2D {
 		this.x = x;
 	}
 
-	public int getY() {
+    int getY() {
 		return y;
 	}
 

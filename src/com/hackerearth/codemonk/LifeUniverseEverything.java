@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 
 class TestClass {
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             int n = Integer.parseInt(br.readLine());

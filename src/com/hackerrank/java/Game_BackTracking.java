@@ -29,11 +29,11 @@ public class Game_BackTracking {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int numOfTestCases = Integer.parseInt(br.readLine());
 		String[] ansArray = new String[numOfTestCases];
-		
+
 		for (int i = 0; i < numOfTestCases; i++) {
-			int position=0;
-			boolean flag=false;
-			
+			int position = 0;
+			boolean flag = false;
+
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ", false);
 			int arraySize = Integer.parseInt(st.nextToken());
 			int jumpLength = Integer.parseInt(st.nextToken());
@@ -50,19 +50,16 @@ public class Game_BackTracking {
 				if (position + 1 >= arraySize || position + jumpLength >= arraySize) {
 					ansArray[i] = "YES";
 					break;
-				}
-				else if (nums[position + 1].equals("0") && flag == false){
+				} else if (nums[position + 1].equals("0") && (!flag)) {
 					position++;
-				}
-				else if (nums[position + jumpLength].equals("0")){
+				} else if (nums[position + jumpLength].equals("0")) {
 					position += jumpLength;
 					flag = false;
-				}
-				else if (position>0 && nums[position - 1].equals("0")){
+				} else if (position > 0 && nums[position - 1].equals("0")) {
 					position--;
 					flag = true;
 				}
-				
+
 				if (position == tempPosition || (position == 0 && nums[position + jumpLength].equals("1"))) {
 					ansArray[i] = "NO";
 					break;
@@ -70,8 +67,8 @@ public class Game_BackTracking {
 			}
 		}
 
-		for (int i = 0; i < ansArray.length; i++) {
-			System.out.println(ansArray[i]);
+		for (String s : ansArray) {
+			System.out.println(s);
 		}
 	}
 }
