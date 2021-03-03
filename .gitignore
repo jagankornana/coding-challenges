@@ -1,6 +1,9 @@
-/bin
-/out
-.project
-.classpath
-.idea
+/bin/
+/build/
+/out/
+/.settings/
+/.classpath
+/.project
+/.idea
+/*.iml
 .DS_Store
