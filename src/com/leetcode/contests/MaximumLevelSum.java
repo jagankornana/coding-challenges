@@ -1,4 +1,4 @@
-package com.leetcode.contest.weekly;
+package com.leetcode.contests;
 
 import java.util.Comparator;
 import java.util.HashMap;

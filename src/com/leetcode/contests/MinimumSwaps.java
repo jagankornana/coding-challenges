@@ -1,4 +1,4 @@
-package com.leetcode.contest.biweekly;
+package com.leetcode.contests;
 
 public class MinimumSwaps {
 

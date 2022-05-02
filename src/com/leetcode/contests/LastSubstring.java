@@ -1,4 +1,4 @@
-package com.leetcode.contest.weekly;
+package com.leetcode.contests;
 
 /**
  * Given a string s, return the last substring of s in lexicographical order.
