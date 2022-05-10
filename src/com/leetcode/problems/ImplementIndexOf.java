@@ -1,11 +1,18 @@
 package com.leetcode.problems;
 
+/**
+ * https://leetcode.com/problems/implement-strstr/
+ */
 public class ImplementIndexOf {
   public static void main(String[] args) {
     ImplementIndexOf input = new ImplementIndexOf();
     System.out.println(input.indexOf("baaab", "ab"));
   }
 
+  /**
+   * TC - O(m*n)
+   * SC - O(m*n)
+   */
   public int indexOf(String haystack, String needle) {
     if (needle.length() == 0) {
       return 0;
