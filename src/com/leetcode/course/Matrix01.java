@@ -1,4 +1,4 @@
-package com.poc.practice;
+package com.leetcode.course;
 
 import java.util.Arrays;
 import java.util.LinkedList;

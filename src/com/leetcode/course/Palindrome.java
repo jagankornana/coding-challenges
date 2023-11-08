@@ -1,4 +1,4 @@
-package com.poc.practice;
+package com.leetcode.course;
 
 public class Palindrome {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package com.poc.practice;
-
-import sun.reflect.generics.tree.Tree;
+package com.leetcode.course;
 
 public class LowestCommonAncestor {
 
